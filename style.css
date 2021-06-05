@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+:root{
+    /* shades of yellow */
+    --yellow-clr-1:#f9ca24;
+    --yellow-clr-2:#facf3a;
+    --yellow-clr-3:#fad550;
+    --yellow-clr-4:#fbda66;
+    --yellow-clr-5:#facf3a;
+    --yellow-clr-6:#fad550;
+    --yellow-clr-7:#fbda66;
+    --yellow-clr-8:#fbdf7c;
+    /*other colors */
+    --clr-black:#222;
+    --clr-white:#fff;
+    --clr-charcoal:#333;
+
+}
  *{
      font-family: 'Nunito', sans-serif;
      margin: 0;
@@ -9,4 +25,21 @@
      border: none;
      text-transform: capitalize;
      transition: all 0.2s linear;
+ }
+ * ::selection{
+    background: var(--yellow-clr-1);
+    color:var(--clr-charcoal) ;
+ }
+ html{
+     font-size: 62.5%;
+     overflow-x: hidden;
+ }
+ html::-webkit-scrollbar{
+    width: 1.4rem;
+ }
+ html::-webkit-scrollbar-track{
+   background: var(--clr-black);
+ }
+ html::-webkit-scrollbar-thumb{
+   background: var(--yellow-clr-2);
  }
