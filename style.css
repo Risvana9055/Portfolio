@@ -9,12 +9,15 @@
     --yellow-clr-6:#fad550;
     --yellow-clr-7:#fbda66;
     --yellow-clr-8:#fbdf7c;
-    /*other colors */
+    /*shades of black */
     --clr-black-1:#111;
     --clr-black-2:#222;
     --clr-black-3:#1a1a1a;
-    --clr-white:#fff;
-    --clr-charcoal:#333;
+    /* shades of white */
+    --clr-white-1:#fff;
+    --clr-white-2:#eee;
+    /* shades of grey */
+    --clr-grey-2:#333;
     --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -33,7 +36,7 @@
  }
  * ::selection{
     background: var(--yellow-clr-1);
-    color:var(--clr-charcoal) ;
+    color:var(--clr-grey-2) ;
  }
  html{
      font-size: 62.5%;
@@ -67,10 +70,104 @@ header{
     text-align: center;
 }
 header .user img{
-    height: 17rem;
-    width:17rem;
+    height: 15rem;
+    width:15rem;
     border-radius:50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: 1rem solid var(--clr-white) ;
+    border: 0.5rem solid var(--yellow-clr-6);
 }
+header .user .name{
+  font-size: 3.5rem;
+  color: var(--clr-white-1);
+}
+header .user .post{
+  font-size: 1.75rem;
+  color: var(--clr-white-2);
+}
+header .navbar{
+  width: 100%; 
+}
+header .navbar ul{
+  list-style: none;
+  padding: 1rem 3rem; 
+}
+header .navbar ul li a{
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background:var(--clr-grey-2) ;
+  color: var(--clr-white-1);
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+header .navbar ul li a:hover{
+  background: var(--yellow-clr-6);
+  color: var(--clr-black-3);
+  font-weight:bolder ;
+}
+#menu{
+  position: fixed;
+  top:2rem;
+  right: 2rem;
+  background:var(--clr-grey-2) ;
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  display: none;
+}
+/* .header.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
