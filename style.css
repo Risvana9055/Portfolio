@@ -128,6 +128,7 @@ header .navbar ul li a:hover{
 
 
 .home{
+  
   display: flex;
  justify-content: center;
   flex-flow: column;
