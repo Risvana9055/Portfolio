@@ -54,10 +54,13 @@
    background: var(--yellow-clr-2);
  }
 body{
-    background:var(--clr-black-1) ;
+    background: var(--clr-black-1);
     overflow-x: hidden;
     padding-left: 35rem;
+   
+   
 }
+
 section{
   min-height: 100vh;
   padding:1rem
@@ -118,6 +121,7 @@ header .navbar ul li a:hover{
   top:2rem;
   right: 2rem;
   background:var(--clr-grey-2) ;
+  color: var(--clr-white-1);
   cursor: pointer;
   font-size: 2.5rem;
   padding: 1rem 1.5rem;
