@@ -17,6 +17,7 @@
     --clr-white-1:#fff;
     --clr-white-2:#eee;
     /* shades of grey */
+    --clr-grey-1:#fff4;
     --clr-grey-2:#333;
     --transition: all 0.3s linear;
   --spacing: 0.25rem;
@@ -57,13 +58,41 @@ body{
     background: var(--clr-black-1);
     overflow-x: hidden;
     padding-left: 35rem;
-   
-   
+}
+.btn{
+    padding:.7rem 3rem;
+    background:var(--clr-grey-2);
+    color:var(--clr-white-1);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 5rem;
 }
 
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background:var(--yellow-clr-6);
+    color: var(--clr-black-3);
+}
 section{
   min-height: 100vh;
   padding:1rem;
+}
+.heading{
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid var(--yellow-clr-8);
+  color:var(--clr-white-1)
+}
+.heading span {
+  color:var(--yellow-clr-1)
 }
 header{
     position: fixed;
@@ -190,9 +219,57 @@ header .navbar ul li a:hover{
 .social-icon:hover {
   color: var(--yellow-clr-4);
 }
- 
+.about .row{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:1rem 0;
+}
+.about .row .info{
+  flex: 1 1 48rem;
+  padding:2rem 1rem;
+  padding-left: 6rem;
+}
+.about .row .info p{
+ font-size: 2rem;
+ color:var(--yellow-clr-8) ;
+ padding: .5rem 0;
+ font-weight: normal;
+}
+.about .row .info h3{
+ font-size: 2rem;
+ color:var(--yellow-clr-3) ;
+ padding: 1rem 0;
+ font-weight: normal;
+}
+.about .row .info h3 span{
+  color: var(--clr-white-2);
+  padding: 0 .5rem;
+}
+.about .row .counter{
+  flex: 1 1 48rem;
+  display: flex;
+   justify-content: center;
+  flex-wrap: wrap;
+}
+.about .row .counter .box{
+  width: 20rem;
+  background: var(--clr-black-2);
+  text-align: center;
+  padding: 2rem;
+  margin:2rem;
+}
+.about .row .counter .box span{
+  font-size: 4rem;
+  color:var(--yellow-clr-5);
 
-
+}
+.about .row .counter .box h3{
+  font-size: 2rem;
+  color:var(--clr-white-1);
+  
+}
 
 
 
