@@ -21,7 +21,7 @@
     --clr-grey-2:#333;
     --transition: all 0.3s linear;
   --spacing: 0.25rem;
-  --radius: 0.5rem;
+  
 
 }
  *{
@@ -270,8 +270,66 @@ header .navbar ul li a:hover{
   color:var(--clr-white-1);
   
 }
-
-
+.education-center{
+  width: 80%;
+  max-width: 40rem;
+  padding:3rem ;
+}
+.education-item{
+  border-top:  2px dashed var(--yellow-clr-1);
+  margin: 0;
+  padding:4rem 2rem;
+  position:relative;
+}
+.education h4{
+  margin-bottom: 0;
+  color: var(--clr-white-2);
+}
+.education p{
+  margin-bottom: 0;
+  color: var(--clr-white-2);
+}
+.education-item:nth-child(even){
+  border-left:  2px dashed var(--yellow-clr-1);
+  border-top-left-radius:2rem;
+  border-bottom-left-radius:2rem;
+  margin-right: 2rem;
+  padding-right: 0;
+}
+.education-item:nth-child(odd){
+  border-right:  2px dashed var(--yellow-clr-1);
+  border-top-right-radius:2rem;
+  border-bottom-right-radius:2rem;
+   margin-left: 2rem;
+  padding-left: 0;
+}
+.education-item:first-child{
+  border-top: 0;
+  border-top-right-radius: 0;
+}
+.education-item:last-child{
+  border-bottom-left-radius: 0;
+}
+.number{
+  color:var(--clr-black-1);
+  position: absolute;
+  top:50%;
+  transform:translate(-50% -50%);
+  margin-bottom: 0;
+  background: var(--yellow-clr-2);
+  width:2rem;
+  height:2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+.education-item:nth-child(even) .number{
+   left: -10px;
+}
+.education-item:nth-child(odd) .number{
+   right: -10px;
+}
 
 
 
@@ -331,6 +389,11 @@ header .navbar ul li a:hover{
    header{
       width: 100vw;
    }
-    
+   .heading{
+     margin: 0 3rem;
+   } 
+   .about .row .counter .box{
+     width:100%;
+   }
  }
  
