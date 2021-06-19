@@ -271,19 +271,23 @@ header .navbar ul li a:hover{
   
 }
 .education-center{
-  width: 80%;
-  max-width: 40rem;
+  width: 100%;
+  max-width: 60rem;
   padding:3rem ;
+ 
 }
 .education-item{
   border-top:  2px dashed var(--yellow-clr-1);
   margin: 0;
   padding:4rem 2rem;
   position:relative;
+  font-size: 2rem;
+ 
 }
 .education h4{
   margin-bottom: 0;
-  color: var(--clr-white-2);
+  color: var(--yellow-clr-6);
+  font-weight: bold;
 }
 .education p{
   margin-bottom: 0;
@@ -322,13 +326,14 @@ header .navbar ul li a:hover{
   border-radius: 50%;
   display: grid;
   place-items: center;
+  font-size: 1rem;
   font-weight: bold;
 }
 .education-item:nth-child(even) .number{
-   left: -10px;
+   left: -11px;
 }
 .education-item:nth-child(odd) .number{
-   right: -10px;
+   right: -11px;
 }
 
 
