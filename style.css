@@ -292,6 +292,7 @@ header .navbar ul li a:hover{
 .education p{
   margin-bottom: 0;
   color: var(--clr-white-2);
+ 
 }
 .education-item:nth-child(even){
   border-left:  2px dashed var(--yellow-clr-1);
@@ -335,15 +336,116 @@ header .navbar ul li a:hover{
 .education-item:nth-child(odd) .number{
    right: -11px;
 }
-
-
-
-
-
-
-
-
-
+.skills-center{
+  padding: 3rem;
+  
+}
+.skill{
+  margin-bottom: 1.25rem;
+  padding: 3rem;
+}
+.skill p{
+  margin-bottom: 0.5rem;
+  color: var(--yellow-clr-5);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.skill-container{
+  background:var(--clr-grey-2);
+  height: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+}
+.skill-value{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:var(--yellow-clr-1);
+  height: 100%;
+  width: 50%;
+  border-radius: 1rem;
+}
+.value-70{
+  width:70%
+}
+.value-60{
+  width:60%
+}
+.value-40{
+  width:40%
+}
+.skill-text{
+  position: absolute;
+  top:-2rem;
+  transform: translateX(-50%);
+}
+.skill-text-70{
+ 
+  left: 70%;
+  
+}
+.skill-text-40{
+  
+  left: 40%;
+ 
+}
+.skill-text-60{
+  
+  left: 60%;
+ 
+}
+.contact .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding:2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+.contact .row form .box{
+    padding:1.5rem;
+    margin: 1rem 0;
+   background:var(--clr-grey-2) ;
+   color: var(--clr-white-1);
+   text-transform: none;
+   font-size: 1.7rem;
+   width:100%;
+}
+.contact .row form .box::placeholder{
+  text-transform: capitalize;
+}
+.contact .row form .message{
+  height: 15rem;
+  resize:none;
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: var(--clr-white-1);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.contact .row .content .info h3{
+       display: flex;
+       align-items:center;
+       font-size: 2rem;
+       color: var(--clr-white-2);
+       padding: 1rem 0;
+       font-weight: normal;
+}
+.contact .row .content .info h3 i{
+  padding-right: 1rem;
+  color:var(--yellow-clr-5);
+}
 
 
 
@@ -390,7 +492,7 @@ header .navbar ul li a:hover{
   
 }
   @media (max-width:400px){
-
+   
    header{
       width: 100vw;
    }
@@ -399,6 +501,16 @@ header .navbar ul li a:hover{
    } 
    .about .row .counter .box{
      width:100%;
+   }
+   .contact .row form{
+     margin: 3rem 0;
+   }
+ }
+ @media screen and (min-width:768px){
+   .skills-center{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     column-gap: 2rem;
    }
  }
  
