@@ -488,7 +488,9 @@ header .navbar ul li a:hover{
    html{
       font-size:50% ;
    }
-  
+  .home{
+    width: 165%;
+   }
 }
   @media (max-width:400px){
    
