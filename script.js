@@ -12,4 +12,4 @@ $(document).ready(function(){
     $('header').removeClass('toggle');
     
   });
-  });
+});
